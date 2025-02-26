@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos de Uso del DNS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .Navbar {
+            background-color: #3D8D7A;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .Navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .Navbar a:hover {
+            background-color: #A3D1C6;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h3 {
+            text-align: center;
+            color: #333;
+        }
+        .case {
+            background: #A3D1C6;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 5px solid #007BFF;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .case img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="Navbar">
+        <a href="index.html">Inicio</a>
+        <a href="definicion_y_proposito.HTML">Definición y Propósito</a>
+        <a href="historia.html">Historia</a>
+        <a href="importancia.html">Importancia</a>
+        <a href="Componentes.html">Componentes</a>
+        <a href="funcionamiento.html">Funcionamiento</a>
+        <a href="casos_de_usos.html">Casos de Uso</a>
+    </nav>
+    <div class="container">
+        <h1>CASOS DE USO</h1>
+        <div class="case">
+            <img src="imagenes/DNS1.png" alt="Resolución de nombres">
+            <div>
+                <h3>Resolución de nombres</h3>
+                <p>Traduce nombres de dominio a direcciones IP para facilitar el acceso a sitios web y servicios.</p>
+            </div>
+        </div>
+        <div class="case">
+            <img src="imagenes/DNS20.jpg" alt="Enrutamiento de correos electrónicos">
+            <div>
+                <h3>Enrutamiento de correos electrónicos</h3>
+                <p>Los registros MX permiten dirigir los correos a los servidores adecuados.</p>
+            </div>
+        </div>
+        <div class="case">
+            <img src="imagenes/DNS2.png" alt="Balanceo de carga">
+            <div>
+                <h3>Balanceo de carga</h3>
+                <p>El DNS puede distribuir el tráfico entre varios servidores mediante técnicas como el Round Robin DNS.</p>
+            </div>
+        </div>
+        <div class="case">
+            <img src="imagenes/GEOLOCALIZACION.jpg" alt="Geolocalización">
+            <div>
+                <h3>Geolocalización</h3>
+                <p>El DNS puede redirigir a los usuarios a servidores específicos basados en su ubicación geográfica.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

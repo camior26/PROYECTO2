@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionamiento del DNS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .sau {
+            background-color: #B3D8A8;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 80%;
+            text-align: justify;
+        }
+        .Navbar {
+            background-color: #3D8D7A;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .Navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .Navbar a:hover {
+            background-color: #A3D1C6;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .content img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            display: block;
+            margin: 20px auto;
+        }
+        .steps {
+            background: #B3D8A8;
+            padding: 15px;
+            border-left: 5px solid #A3D1C6;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="Navbar">
+        <a href="index.html">Inicio</a>
+        <a href="definicion_y_proposito.HTML">Definición y Propósito</a>
+        <a href="historia.html">Historia</a>
+        <a href="importancia.html">Importancia</a>
+        <a href="Componentes.html">Componentes</a>
+        <a href="funcionamiento.html">Funcionamiento</a>
+        <a href="casos_de_usos.html">Casos de Uso</a>
+    </nav>
+    <div class="container">
+        <h1>FUNCIONAMIENTO</h1>
+        <div class="content">
+            <center><p>El proceso de resolución de un nombre de dominio ocurre en varias etapas</p></center>
+            <img src="imagenes/DNS5.png" alt="Proceso de resolución DNS">
+        </div>
+        <div class="steps">
+            <h3>Fases del proceso:</h3>
+            <ul>
+                <li><strong>Consulta Recursiva del Cliente:</strong> Un usuario solicita acceder a un sitio web escribiendo un nombre de dominio.</li>
+                <br>
+                <li><strong>Consulta al Servidor Recursivo:</strong> El cliente envía la solicitud a un servidor recursivo (ISP o configurado manualmente).</li>
+                <br>
+                <li><strong>Interacción Jerárquica:</strong> El servidor recursivo consulta a los servidores raíz, que lo redirigen a los servidores TLD y luego a los autoritativos.</li>
+                <br>
+                <li><strong>Respuesta Final:</strong> El servidor autoritativo devuelve la dirección IP, que el servidor recursivo envía al cliente.</li>
+            </ul>
+            <img src="imagenes/DNS8.png" width="100%" alt="Flujo del DNS">
+        </div>
+    </div>
+</body>
+</html>
